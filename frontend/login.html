@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Giriş Yap</title>
+    <link rel="stylesheet" type="text/css" href="css/loginStyles.css">
+</head>
+<body>
+    <h2>Giriş Sayfası</h2>
+    <div class="login">
+        <form id="loginForm" method="post" action="/login"> <!-- action/endpoint örneği -->
+            <label for="username"><b>Kullanıcı Adı</b></label>
+            <input id="username" name="username" type="text" placeholder="Kullanıcı Adı">
+            <br><br>
+            
+            <label for="password"><b>Şifre</b></label>
+            <input id="password" name="password" type="password" placeholder="Şifre">
+            <br><br>
+            
+            <input type="submit" id="loginBtn" value="Log In Here">
+            <input type="button" id="goToRegisterBtn" value="Kayıt Ol" style="margin-left: 10px; background-color: #28a745;">
+            <br><br>
+            <input id="remember" name="remember" type="checkbox"> <label for="remember">Beni Hatırla</label>
+        </form>
+    </div>
+
+    <!-- proje dosya yapınızda js/scripts.js ise burayı düzeltin -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>

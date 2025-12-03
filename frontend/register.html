@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kayıt Ol</title>
+  <link rel="stylesheet" href="css/loginStyles.css" />
+</head>
+<body>
+  <h2>Kayıt Sayfası</h2>
+  <div class="register">
+    <form id="registerForm" method="post" action="/register">
+      <label for="reg_username">Kullanıcı Adı</label>
+      <input id="reg_username" name="username" type="text" required>
+
+      <label for="reg_email">E-posta</label>
+      <input id="reg_email" name="email" type="email" required>
+
+      <label for="reg_password">Şifre</label>
+      <input id="reg_password" name="password" type="password" required>
+
+      <label for="reg_password_confirm">Şifre (Tekrar)</label>
+      <input id="reg_password_confirm" name="password_confirm" type="password" required>
+
+      <button type="submit" id="completeRegisterBtn">Kayıt Tamamla</button>
+      <input type="button" id="backToLoginBtn" value="Geri - Giriş">
+    </form>
+  </div>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
